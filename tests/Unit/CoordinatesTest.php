@@ -9,7 +9,7 @@ use \CodeblogPro\GeoCoordinates\Tests\BlanksAndMocksAndConstants;
 
 class CoordinatesTest extends \PHPUnit\Framework\TestCase
 {
-    public function testConstructWithMinValidInputDataTocoordinatesObjectCreated()
+    public function testConstructWithMinValidInputDataToCoordinatesObjectCreated()
     {
         $coordinates = new Coordinates(
             BlanksAndMocksAndConstants::getMinValidLatitudeValue(),
