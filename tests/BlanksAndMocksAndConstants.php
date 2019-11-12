@@ -34,4 +34,14 @@ class BlanksAndMocksAndConstants
     {
         return 37.615;
     }
+
+    public static function getTooSmallInvalidLatitudeValue()
+    {
+        return -91;
+    }
+
+    public static function getTooSmallInvalidLongitudeValue()
+    {
+        return -181;
+    }
 }

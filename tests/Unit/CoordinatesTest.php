@@ -4,8 +4,9 @@ declare(strict_types=1);
 
 namespace CodeblogPro\GeoCoordinates\Tests\Unit;
 
-use \CodeblogPro\GeoCoordinates\Coordinates;
-use \CodeblogPro\GeoCoordinates\Tests\BlanksAndMocksAndConstants;
+use CodeblogPro\GeoCoordinates\Coordinates;
+use CodeblogPro\GeoCoordinates\Exceptions\InvalidArgumentException;
+use CodeblogPro\GeoCoordinates\Tests\BlanksAndMocksAndConstants;
 
 class CoordinatesTest extends \PHPUnit\Framework\TestCase
 {
@@ -37,5 +38,15 @@ class CoordinatesTest extends \PHPUnit\Framework\TestCase
         );
 
         $this->assertInstanceOf(Coordinates::class, $coordinates);
+    }
+
+    public function testConstructWithTooSmallInputDataToExceptionReturned()
+    {
+        $this->expectException(InvalidArgumentException::class);
+
+        new Coordinates(
+            BlanksAndMocksAndConstants::getTooSmallInvalidLatitudeValue(),
+            BlanksAndMocksAndConstants::getTooSmallInvalidLongitudeValue()
+        );
     }
 }
