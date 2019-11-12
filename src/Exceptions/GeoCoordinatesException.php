@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace CodeblogPro\GeoCoordinates\Exception;
+namespace CodeblogPro\GeoCoordinates\Exceptions;
 
 /**
  * This class represents a generic error.

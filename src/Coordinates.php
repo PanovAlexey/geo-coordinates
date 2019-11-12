@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace CodeblogPro\GeoCoordinates;
 
-use CodeblogPro\GeoCoordinates\Exception\InvalidArgumentException;
+use CodeblogPro\GeoCoordinates\Exceptions\InvalidArgumentException;
 
 class Coordinates implements CoordinatesInterface
 {
