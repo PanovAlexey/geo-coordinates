@@ -49,4 +49,14 @@ class CoordinatesTest extends \PHPUnit\Framework\TestCase
             BlanksAndMocksAndConstants::getTooSmallInvalidLongitudeValue()
         );
     }
+
+    public function testConstructWithTooMuchInputDataToExceptionReturned()
+    {
+        $this->expectException(InvalidArgumentException::class);
+
+        new Coordinates(
+            BlanksAndMocksAndConstants::getTooMuchInvalidLatitudeValue(),
+            BlanksAndMocksAndConstants::getTooMuchInvalidLongitudeValue()
+        );
+    }
 }
