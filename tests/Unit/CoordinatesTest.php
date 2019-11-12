@@ -18,4 +18,14 @@ class CoordinatesTest extends \PHPUnit\Framework\TestCase
 
         $this->assertInstanceOf(Coordinates::class, $coordinates);
     }
+
+    public function testConstructWithMaxValidInputDataToCoordinatesObjectCreated()
+    {
+        $coordinates = new Coordinates(
+            BlanksAndMocksAndConstants::getMaxValidLatitudeValue(),
+            BlanksAndMocksAndConstants::getMaxValidLongitudeValue()
+        );
+
+        $this->assertInstanceOf(Coordinates::class, $coordinates);
+    }
 }
