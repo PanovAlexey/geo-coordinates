@@ -28,4 +28,14 @@ class CoordinatesTest extends \PHPUnit\Framework\TestCase
 
         $this->assertInstanceOf(Coordinates::class, $coordinates);
     }
+
+    public function testConstructWithMoscowValidInputDataToCoordinatesObjectCreated()
+    {
+        $coordinates = new Coordinates(
+            BlanksAndMocksAndConstants::getMoscowLatitudeValue(),
+            BlanksAndMocksAndConstants::getMoscowLongitudeValue()
+        );
+
+        $this->assertInstanceOf(Coordinates::class, $coordinates);
+    }
 }
