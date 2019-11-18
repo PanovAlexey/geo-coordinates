@@ -10,7 +10,7 @@ use CodeblogPro\GeoCoordinates\Tests\BlanksAndMocksAndConstants;
 
 class CoordinatesTest extends \PHPUnit\Framework\TestCase
 {
-    public function testConstructWithMinValidInputDataToCoordinatesObjectCreated()
+    public function testConstructWithMinValidInputDataToCoordinatesObjectCreated(): void
     {
         $coordinates = new Coordinates(
             BlanksAndMocksAndConstants::getMinValidLatitudeValue(),
@@ -20,7 +20,7 @@ class CoordinatesTest extends \PHPUnit\Framework\TestCase
         $this->assertInstanceOf(Coordinates::class, $coordinates);
     }
 
-    public function testConstructWithMaxValidInputDataToCoordinatesObjectCreated()
+    public function testConstructWithMaxValidInputDataToCoordinatesObjectCreated(): void
     {
         $coordinates = new Coordinates(
             BlanksAndMocksAndConstants::getMaxValidLatitudeValue(),
@@ -30,7 +30,7 @@ class CoordinatesTest extends \PHPUnit\Framework\TestCase
         $this->assertInstanceOf(Coordinates::class, $coordinates);
     }
 
-    public function testConstructWithMoscowValidInputDataToCoordinatesObjectCreated()
+    public function testConstructWithMoscowValidInputDataToCoordinatesObjectCreated(): void
     {
         $coordinates = new Coordinates(
             BlanksAndMocksAndConstants::getMoscowLatitudeValue(),
@@ -40,7 +40,7 @@ class CoordinatesTest extends \PHPUnit\Framework\TestCase
         $this->assertInstanceOf(Coordinates::class, $coordinates);
     }
 
-    public function testConstructWithTooSmallInputDataToExceptionReturned()
+    public function testConstructWithTooSmallInputDataToExceptionReturned(): void
     {
         $this->expectException(InvalidArgumentException::class);
 
@@ -50,7 +50,7 @@ class CoordinatesTest extends \PHPUnit\Framework\TestCase
         );
     }
 
-    public function testConstructWithTooMuchInputDataToExceptionReturned()
+    public function testConstructWithTooMuchInputDataToExceptionReturned(): void
     {
         $this->expectException(InvalidArgumentException::class);
 
