@@ -1,9 +1,9 @@
 # GeoCoordinates package
 
-[![Build Status](https://travis-ci.org/PanovAlexey/geo-coordinates.svg?branch=master)](https://travis-ci.org/PanovAlexey/geo-location) 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/PanovAlexey/geo-location/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/PanovAlexey/geo-location/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/PanovAlexey/geo-location/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/PanovAlexey/geo-location/?branch=master)
-[![Code Intelligence Status](https://scrutinizer-ci.com/g/PanovAlexey/geo-location/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
+[![Build Status](https://travis-ci.org/PanovAlexey/geo-coordinates.svg?branch=master)](https://travis-ci.org/PanovAlexey/geo-coordinates) 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/PanovAlexey/geo-coordinates/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/PanovAlexey/geo-coordinates/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/PanovAlexey/geo-coordinates/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/PanovAlexey/geo-coordinates/?branch=master)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/PanovAlexey/geo-coordinates/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
 [![Total Downloads](https://poser.pugx.org/codeblog.pro/geo-coordinates/downloads)](https://packagist.org/packages/codeblog.pro/geo-coordinates)
 [![Version](https://poser.pugx.org/codeblog.pro/geo-coordinates/version)](https://packagist.org/packages/codeblog.pro/geo-coordinates)
 
