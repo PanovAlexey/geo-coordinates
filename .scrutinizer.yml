@@ -31,6 +31,3 @@ tools:
     sensiolabs_security_checker: true
     php_code_coverage: true
     php_pdepend: true
-    external_code_coverage:
-        timeout: 600
-        runs: 3
